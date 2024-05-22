@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+#game {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+#characters {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+#bananaCat, #elGado {
+  position: relative;
+  padding-bottom: 90px;
+}
+
+#bananaCatInfo {
+  display: inline-block;
+}
+
+#bananaCat img {
+  display: none; /* Hide initially */
+  width: 150px;  /* Adjust size as necessary */
+  height: auto;
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 100%; /* Position to the right of the text */
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+#actions button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 18px;
+}

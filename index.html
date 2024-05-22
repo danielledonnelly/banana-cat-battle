@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banana Cat vs El Gado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game">
+        <div id="characters">
+            <div id="bananaCat">
+                <div id="bananaCatInfo">
+                    <h2>Banana Cat</h2>
+                    <p>HP: <span id="bananaCatHP">20</span></p>
+                </div>
+                <img id="cryingGif" src="images/crying-banana-cat.gif" alt="Crying Banana Cat">
+            </div>
+            <div id="elGado">
+                <h2>El Gado</h2>
+                <p>HP: <span id="elGadoHP">20</span></p>
+            </div>
+        </div>
+        <div id="actions">
+            <button onclick="performAction('cry')">Cry</button>
+            <button onclick="performAction('throwFish')">Throw Fish</button>
+            <button onclick="performAction('zoomies')">Zoomies</button>
+            <button onclick="performAction('meow')">Meow</button>
+        </div>
+        <div id="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
