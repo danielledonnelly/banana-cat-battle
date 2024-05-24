@@ -35,13 +35,13 @@ body {
 }
 
 #bananaCat img, #elGado img {
-  width: 300px; /* Adjust size as necessary */
+  width: 300px; 
   height: auto;
 }
 
 #bananaCat #cryingGif {
   display: none; /* Hide initially */
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
