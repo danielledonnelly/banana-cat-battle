@@ -7,7 +7,7 @@ body {
 }
 
 #game {
-  max-width: 1000px; /* Adjust as necessary */
+  max-width: 1000px; 
   margin: 0 auto;
   padding: 20px;
   background-color: #fff;
@@ -44,13 +44,13 @@ body {
   height: auto;
 }
 
-#cryingGif, #zoomiesGif {
-  display: none; /* Hide initially */
+#cryingGif, #zoomiesGif, #meowGif {
+  display: none; 
   position: absolute;
   top: 0;
   left: 0;
-  width: 300px; /* Maintain width consistency */
-  height: auto; /* Maintain aspect ratio */
+  width: 300px; 
+  height: auto;
   z-index: 2;
 }
 

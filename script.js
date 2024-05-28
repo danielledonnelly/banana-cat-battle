@@ -47,6 +47,7 @@ function performAction(action) {
             bananaCatHP += 3;
             if (bananaCatHP > 20) bananaCatHP = 20;  // Cap HP at 20
             message = 'Banana Cat meows, healing 3 HP!';
+            showGif('meowGif');
             break;
     }
 
