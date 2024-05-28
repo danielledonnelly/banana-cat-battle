@@ -6,18 +6,18 @@ function updateHP() {
     document.getElementById('elGadoHP').innerText = elGadoHP;
 }
 
-function showCryingGif() {
+function showGif(gifId) {
     const bananaCatImg = document.getElementById('bananaCatImg');
-    const cryingGif = document.getElementById('cryingGif');
+    const gif = document.getElementById(gifId);
     
     // Hide the original image
     bananaCatImg.style.visibility = 'hidden';
-    // Show the crying gif
-    cryingGif.style.display = 'block';
+    // Show the gif
+    gif.style.display = 'block';
     
-    // Hide the crying gif after 3 seconds and show the original image
+    // Hide the gif after 3 seconds and show the original image
     setTimeout(() => {
-        cryingGif.style.display = 'none';
+        gif.style.display = 'none';
         bananaCatImg.style.visibility = 'visible';
     }, 3000);
 }
@@ -31,7 +31,7 @@ function performAction(action) {
     switch(action) {
         case 'cry':
             message = 'Banana Cat cries, reducing El Gado\'s attack!';
-            showCryingGif();
+            showGif('cryingGif');
             // Implement logic to reduce El Gado's attack
             break;
         case 'throwFish':
@@ -40,6 +40,7 @@ function performAction(action) {
             break;
         case 'zoomies':
             message = 'Banana Cat zoomies, increasing dodge chance!';
+            showGif('zoomiesGif');
             // Implement logic to increase dodge chance
             break;
         case 'meow':

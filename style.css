@@ -39,7 +39,12 @@ body {
   height: auto;
 }
 
-#cryingGif {
+#bananaCatImg, #elGadoImg {
+  width: 300px;
+  height: auto;
+}
+
+#cryingGif, #zoomiesGif {
   display: none; /* Hide initially */
   position: absolute;
   top: 0;
@@ -48,6 +53,7 @@ body {
   height: auto; /* Maintain aspect ratio */
   z-index: 2;
 }
+
 
 #bananaCatImg {
   z-index: 1;
