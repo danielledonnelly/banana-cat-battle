@@ -7,11 +7,19 @@ function updateHP() {
 }
 
 function showCryingGif() {
+    const bananaCatImg = document.getElementById('bananaCatImg');
     const cryingGif = document.getElementById('cryingGif');
+    
+    // Hide the original image
+    bananaCatImg.style.visibility = 'hidden';
+    // Show the crying gif
     cryingGif.style.display = 'block';
+    
+    // Hide the crying gif after 3 seconds and show the original image
     setTimeout(() => {
         cryingGif.style.display = 'none';
-    }, 3000); // Display the GIF for 3 seconds
+        bananaCatImg.style.visibility = 'visible';
+    }, 3000);
 }
 
 function performAction(action) {
