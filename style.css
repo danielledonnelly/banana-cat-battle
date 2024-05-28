@@ -23,23 +23,18 @@ body {
   margin-bottom: 20px;
 }
 
-#bananaCat, #elGado {
+#bananaCat, #elGato {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#bananaCatInfo, #elGadoInfo {
+#bananaCatInfo, #elGatoInfo {
   margin-top: 10px;
 }
 
-#bananaCatImg, #elGadoImg {
-  width: 300px;
-  height: auto;
-}
-
-#bananaCatImg, #elGadoImg {
+#bananaCatImg, #elGatoImg {
   width: 300px;
   height: auto;
 }
@@ -53,7 +48,6 @@ body {
   height: auto;
   z-index: 2;
 }
-
 
 #bananaCatImg {
   z-index: 1;

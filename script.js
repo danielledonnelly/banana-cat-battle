@@ -1,9 +1,9 @@
 let bananaCatHP = 20;
-let elGadoHP = 20;
+let elGatoHP = 20;
 
 function updateHP() {
     document.getElementById('bananaCatHP').innerText = bananaCatHP;
-    document.getElementById('elGadoHP').innerText = elGadoHP;
+    document.getElementById('elGatoHP').innerText = elGatoHP;
 }
 
 function showGif(gifId) {
@@ -24,19 +24,19 @@ function showGif(gifId) {
 
 function performAction(action) {
     let message = '';
-    if (bananaCatHP <= 0 || elGadoHP <= 0) {
+    if (bananaCatHP <= 0 || elGatoHP <= 0) {
         return;
     }
 
     switch(action) {
         case 'cry':
-            message = 'Banana Cat cries, reducing El Gado\'s attack!';
+            message = 'Banana Cat cries, reducing El Gato\'s attack!';
             showGif('cryingGif');
-            // Implement logic to reduce El Gado's attack
+            // Implement logic to reduce El Gato's attack
             break;
         case 'throwFish':
-            elGadoHP -= 3;
-            message = 'Banana Cat throws a fish, dealing 3 damage to El Gado!';
+            elGatoHP -= 3;
+            message = 'Banana Cat throws a fish, dealing 3 damage to El Gato!';
             break;
         case 'zoomies':
             message = 'Banana Cat zoomies, increasing dodge chance!';
@@ -54,7 +54,7 @@ function performAction(action) {
     updateHP();
     document.getElementById('message').innerText = message;
 
-    if (elGadoHP <= 0) {
+    if (elGatoHP <= 0) {
         document.getElementById('message').innerText = 'Banana Cat wins!';
         return;
     }
@@ -70,14 +70,14 @@ function enemyTurn() {
     switch(action) {
         case 'scratch':
             bananaCatHP -= 3;
-            message = 'El Gado scratches, dealing 3 damage to Banana Cat!';
+            message = 'El Gato scratches, dealing 3 damage to Banana Cat!';
             break;
         case 'bite':
             bananaCatHP -= 4;
-            message = 'El Gado bites, dealing 4 damage to Banana Cat!';
+            message = 'El Gato bites, dealing 4 damage to Banana Cat!';
             break;
         case 'taunt':
-            message = 'El Gado taunts, reducing Banana Cat\'s morale!';
+            message = 'El Gato taunts, reducing Banana Cat\'s morale!';
             // Implement logic to reduce morale
             break;
     }
@@ -86,7 +86,7 @@ function enemyTurn() {
     document.getElementById('message').innerText = message;
 
     if (bananaCatHP <= 0) {
-        document.getElementById('message').innerText = 'El Gado wins!';
+        document.getElementById('message').innerText = 'El Gato wins!';
     }
 }
 
